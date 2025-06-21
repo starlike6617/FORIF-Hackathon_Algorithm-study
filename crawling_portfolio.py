@@ -10,8 +10,8 @@ driver = webdriver.Chrome()
 
 # 1. 포털 로그인
 driver.get("https://portal.hanyang.ac.kr/sso/lgin.do")
-driver.find_element(By.NAME, "userId").send_keys("sbs000126")
-driver.find_element(By.NAME, "password").send_keys("iop1535153" + Keys.RETURN)
+driver.find_element(By.NAME, "userId").send_keys("id")
+driver.find_element(By.NAME, "password").send_keys("pw" + Keys.RETURN)
 time.sleep(3)
 
 # 2. 과목 조회 페이지 진입
