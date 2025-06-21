@@ -12,4 +12,3 @@ if not st.session_state.get("timetable_suggestions"):
 for i, df in enumerate(st.session_state.timetable_suggestions, 1):
     st.subheader(f"추천안 #{i}")
     st.dataframe(df, hide_index=True)
-
